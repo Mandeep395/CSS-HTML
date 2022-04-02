@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+           height:40vh;
+        }
+        .box{
+            border: 2px solid black;
+            /*transform: translate(134px,56px) rotate(75deg);
+            transform: scale(4,7);
+            transform: skew(4deg,6deg);*/
+            transform-origin: 0;
+            /*transform: translate(134px,56px) rotateX(45deg);*/
+            display: inline-block;
+        }
+        img:hover{
+            width: 50px;
+        }
+        img{
+            width: 146px;
+            height: 456px;
+            /*transition-property:width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s;*/
+            transition: width 1s ease-in-out,height 4s ease-in;
+        }
+    </style>
+      
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="taj.jpg" width="960px" height="520px"> 
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+    <script>
+                    myImage.style.width="46px";
+myImage.style.height='16px';
+        btn.addEventListener("click",()=>{
+            myImage.style.height='456px';
+
+            if(myImage.style.width==='546px'){
+                myImage.style.width="46px";
+            }
+            else if(myImage.style.width==='46px'){
+                myImage.style.width="546px";
+            }
+        })
+   </script>  
+</body>
+</html>

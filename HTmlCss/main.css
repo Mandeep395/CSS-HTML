@@ -1,0 +1,84 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)) ,url(taj.jpg);
+    background-position: unset;
+    background-size: cover;
+    position: absolute;
+}
+h1{
+    color: antiquewhite;
+}
+.first{
+    transform: translate(49vw);
+    animation: slider 11s ease-in-out 0s infinite normal;
+}
+.second{
+    transform: translateX(-13vw);
+    animation: slider1 11s ease-in-out 0s infinite normal;
+}
+@keyframes slider {
+    0%{
+        transform: translate(49vw);
+    }
+    100%{
+        transform: translate(100vw);
+    }
+    
+}
+
+@keyframes slider1 {
+    0%{
+        transform: translateX(-13vw);
+    }
+    100%{
+        transform: translateX(49vw);
+    }
+    
+}
+.span {
+    animation:merabharat 4s ease-in-out 1s infinite  alternate-reverse;
+}
+@keyframes merabharat {
+    0%{
+        transform: rotateX(0deg)
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+    
+}
+
+nav{
+    background-color:#1f63b9;
+    color: antiquewhite;
+    height:35px;
+    overflow: hidden;
+}
+nav ul li{
+    display:inline;
+    padding: 13px;
+    bottom:22px;
+    position: relative;
+    left:1076px;
+}
+nav ul li:hover{
+    color: black;
+}
+footer a{
+    position: absolute;
+    bottom: 0px;
+    color:antiquewhite;
+    width:100%;
+    text-align: center;
+    background-color: #1f63b9;
+}
+footer{
+    height:35px;
+    width:100%;
+}

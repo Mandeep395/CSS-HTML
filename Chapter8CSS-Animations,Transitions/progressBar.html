@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            background-color: #dc143c;
+            height: 5px;
+            width:100%;
+            animation: progressbar 4s ease-in-out 0s infinite normal;
+        }
+        @keyframes progressbar {
+            0%{
+                width:0px;
+            }
+            20%{
+                width:20vw;
+            }
+            45%{
+                width:45vw; 
+            }
+            100%{
+                width: 100vw; 
+            }
+        }
+        @keyframes rotateimg {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        img{
+            animation: rotateimg 3s ease-in 0s infinite alternate-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <img src="taj.jpg" width="200px" height="200px">
+
+</body>
+</html>

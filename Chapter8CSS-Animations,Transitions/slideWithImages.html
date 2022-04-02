@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider{
+            background-color: crimson;
+            height: 523px;
+            width: 100vw;
+            overflow: hidden;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            display: block;
+            margin: auto;
+            transform: translate(100vw);
+        }
+        .img1{
+            transform: translate(34vw);
+            animation: slider1 6s ease-in-out 1s infinite normal;
+        }
+        .img2{
+            transform: translate(81vw);
+            animation: slider2 6s ease-in-out 1s infinite normal;
+
+
+        }
+        .img3{
+            transform: translate(16vw);
+        }
+        @keyframes slider1 {
+            0%{
+                transform: translate(34vw);
+            }
+            100%{
+                transform: translate(120vw);
+            }
+            
+        }
+        @keyframes slider2 
+        {
+            0%{
+                transform: translate(-84vw);
+            }
+            100%{
+                transform: translate(-15vw);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img class="img1" src="taj.jpg">
+        <img class="img2"  src="book.jpg" width="500px" >
+        <img class="img3"  src="BOOKIMAGE.jpg" width="500px">
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vw;
+            width: 100vh;
+            background-color: blue;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           /* animation-name: width;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-timing-function:ease-out ;
+            animation-iteration-count: 4;
+            animation-direction:reverse;*/
+            animation: widthAnimare 4s ease-out 2s 2 reverse ;
+        }
+        @keyframes width {
+            from{
+                width: 300px;
+            height:300px}
+            to{
+                width: 100vw;
+                height: 100vh;
+            }
+            
+        }
+        @keyframes widthAnimare{
+            0%{
+                width: 300px;
+            height:300px}
+            20%{
+                width: 90vw;
+                height: 90vh;
+            }
+            100%{
+                width: 100vw;
+                height: 100vh;
+            }
+            
+        }
+    
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="box">
+           Animation Box
+
+       </div>
+   </div> 
+</body>
+</html>
